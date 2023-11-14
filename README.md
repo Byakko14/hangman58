@@ -12,17 +12,27 @@
 ## Description
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it.
+
+This project is a simple guessing game where the user tries to guess a letter in a randomly chosen word.
 
 ## Installation
-Include instructions on how to install your project. This may involve dependencies, environment setup, or any other necessary steps.
+Clone the repository and run the Python script.
 
 ## Usage
-Explain how to use your project. Include examples, commands, or any other information that users or developers might need to effectively utilize your project.
+The game prompts the user to guess a letter in the randomly chosen word. The ask_for_input function handles user input, and the check_guess function verifies if the guessed letter is in the word.
+
+# Test the code
+word_list = ["apple", "banana", "orange", "grape", "kiwi"]
+secret_word = random.choice(word_list)
+
+# Call the ask_for_input function to test the code
+ask_for_input(secret_word)
 
 ## File Structure
-Outline the structure of your project. Briefly describe the purpose of major directories or important files.
+guessing_game.py: Main script containing the game logic.
+README.md: Documentation for the project.
 
 ## License
-Specify the license under which your project is distributed. This is important for others who may want to use, modify, or distribute your code.
+This project is licensed under the MIT License.
 
