@@ -20,19 +20,14 @@ This project is a simple guessing game where the user tries to guess a letter in
 Clone the repository and run the Python script.
 
 ## Usage
-The game prompts the user to guess a letter in the randomly chosen word. The ask_for_input function handles user input, and the check_guess function verifies if the guessed letter is in the word.
+The game prompts the user to guess a letter in the randomly chosen word. The `ask_for_input` function handles user input, and the `check_guess` function verifies if the guessed letter is in the word.
 
 # Test the code
 word_list = ["apple", "banana", "orange", "grape", "kiwi"]
 secret_word = random.choice(word_list)
 
-# Call the ask_for_input function to test the code
-ask_for_input(secret_word)
+# Create an instance of the Hangman class
+hangman_game = Hangman(word_list)
 
-## File Structure
-guessing_game.py: Main script containing the game logic.
-README.md: Documentation for the project.
-
-## License
-This project is licensed under the MIT License.
-
+# Call the ask_for_input method to test the code
+hangman_game.ask_for_input()
